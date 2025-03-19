@@ -80,8 +80,34 @@ log(frutas);
 //Remover o último item
 frutas.pop;
 
-//Estruturas condicionais
+log(frutas);
 
+//Estruturas condicionais
+const idade = 18;
+ if (idade >= 18) {
+   log("Sou Adulto");
+ } else if (idade >= 2) {
+   log("Sou uma criança");
+ } else {
+   log("Sou bebê");
+ }
+ 
+ const instituicao = "CEM10";
+ 
+ switch (instituicao) {
+   case "CEM10":
+     log("ESCOLA");
+     break;
+   case "CIL":
+     log("ESCOLA DE LÍNGUAS");
+     break;
+   case "CEUB":
+     log("FACULDADE");
+     break;
+   default:
+     log("Não é instituição");
+ }
+ 
 //Estrutura de repetição
 for (let loop = 0; loop < 5; loop++) {
     log(`Meu valor no loop: ${loop}`);
