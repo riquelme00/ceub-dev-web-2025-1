@@ -83,25 +83,72 @@ const instituicao = "CEM10";
 
 switch (instituicao) {
     case "CEM10": log("Escola");
-    break;
+        break;
     case "CIL": log("Escola de linguas");
-    break;
+        break;
     case "CEUB": log("Faculdade");
-    break;
+        break;
     default:
         log("Não é uma instituição");
 }
 
 // Estrutura de repetição
 
-for(let loop = 0; loop < 5; loop++){
+for (let loop = 0; loop < 5; loop++) {
     log(`Meu valor no loop: ${loop}`)
 
 }
 let valorWhile = 0;
-while(valorWhile < 5){
+while (valorWhile < 5) {
     log(`Meu valor no loop: ${valorWhile}`);
     valorWhile++;
 }
 
+//Funções Assíncronas permitem executar operações 
+//sem bloquear a execução do código
 
+async function buscarDados() {
+    return new Promise(resolve => {
+        setTimeout(() => resolve("Dados Recebidos"), 4 * 1000);
+    });
+}
+
+async function executarBusca() {
+    log("Buscando...")
+
+    let resultado = await buscarDados();
+
+    log(resultado);
+
+}
+
+executarBusca();
+
+const meuMetodo = function exemploMetodo() {
+    log("Executei por metodo normal");
+}
+
+log(meuMetodo)
+const objTeste = {
+    oi() {
+        log("oi")
+    },
+    xau() {
+        log("xau")
+    }
+}
+objTeste.oi();
+objTeste.xau();
+
+//Manipulação do DOM
+//Aqui criamos um elemento dinamicamente e o adicionamos ao corpo da página
+document.addEventListener("DOMContentLoaded", () => {
+    let titulo = document.createElement("h2");
+    titulo.innerText = "Olá DOM";
+    document.body.appendChild(titulo);
+});
+
+function toggleImagem() {
+    let img = document.getElementById("minhaImagem") 
+    img.style.display =  img.style.display === "none" ? "block" : "none";   
+}
