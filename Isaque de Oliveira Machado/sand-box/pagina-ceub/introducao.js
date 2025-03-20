@@ -3,7 +3,7 @@
 var ola = "Olá Mundo! JS";
 console.log(ola);
 
-function log(valor){
+function log(valor) {
     console.log(valor);
 }
 
@@ -18,7 +18,7 @@ log(typeof palavra); //String
 var isOK = true;
 log(typeof isOK); //Boolean
 
-var meuObj = {}; 
+var meuObj = {};
 log(typeof meuObj); //Object
 
 var meuArray = [];
@@ -32,7 +32,7 @@ log(typeof variavelFlamengo); //Undefined
 
 
 //Escopo da variável
-function compararEscopo(){
+function compararEscopo() {
     if (true) {
         var varDentro = "Var dentro do bloco";
         let letDentro = "Let dentro do bloco";
@@ -44,8 +44,8 @@ function compararEscopo(){
     }
     log(palavra); //Funciona! (Global)
     log(varDentro); //Funciona! (Escopo)
-    log(letDentro); // Erro! (Acesso somente no bloco)
-    log(constDentro); // Erro! (Acesso somente no bloco)
+    //log(letDentro); Erro! (Acesso somente no bloco)
+    //log(constDentro);  Erro! (Acesso somente no bloco)
 
 }
 
@@ -78,36 +78,36 @@ frutas.push("Manga")
 log(frutas);
 
 //Remover o último item
-frutas.pop;
+frutas.pop();
 
 log(frutas);
 
 //Estruturas condicionais
 const idade = 18;
- if (idade >= 18) {
-   log("Sou Adulto");
- } else if (idade >= 2) {
-   log("Sou uma criança");
- } else {
-   log("Sou bebê");
- }
- 
- const instituicao = "CEM10";
- 
- switch (instituicao) {
-   case "CEM10":
-     log("ESCOLA");
-     break;
-   case "CIL":
-     log("ESCOLA DE LÍNGUAS");
-     break;
-   case "CEUB":
-     log("FACULDADE");
-     break;
-   default:
-     log("Não é instituição");
- }
- 
+if (idade >= 18) {
+    log("Sou Adulto");
+} else if (idade >= 2) {
+    log("Sou uma criança");
+} else {
+    log("Sou bebê");
+}
+
+const instituicao = "CEM10";
+
+switch (instituicao) {
+    case "CEM10":
+        log("ESCOLA");
+        break;
+    case "CIL":
+        log("ESCOLA DE LÍNGUAS");
+        break;
+    case "CEUB":
+        log("FACULDADE");
+        break;
+    default:
+        log("Não é instituição");
+}
+
 //Estrutura de repetição
 for (let loop = 0; loop < 5; loop++) {
     log(`Meu valor no loop: ${loop}`);
@@ -119,3 +119,52 @@ while (valorWhile < 5) {
     valorWhile++;
 }
 
+//Funções Assíncronas permitem executar operações 
+//sem bloquear a execução do código
+async function buscarDados() {
+    return new Promise(resolve => {
+        setTimeout(() => resolve("Dados Recebidos"), 4*1000);
+    });
+}
+
+async function executarBusca() {
+    log("Buscando...");
+
+    let resultado = await buscarDados();
+
+    log(resultado);
+}
+
+executarBusca();
+
+const meuMetodo = function exemploMetodo() {
+    log("Executei por metodo normal");
+};
+
+log(meuMetodo);
+
+const objTeste = {
+    oi(){
+        log("OI");
+    },
+    xau(){
+        log("XAU");
+    }
+};  
+
+objTeste.oi();
+objTeste.xau();
+
+
+//Manipulação do DOM
+//Aqui criamos um elemento dinamicamente e o adicionamos ao corpo da página
+document.addEventListener("DOMContentLoaded", () => {
+    let titulo = document.createElement("h2");
+    titulo.innerText = "Olá DOM";
+    document.body.appendChild(titulo);
+});
+
+function toggleImagem() {
+    let img = document.getElementById("minhaimagem");
+    img.style.display = img.style.display === "none" ? "block" : "none";
+}
