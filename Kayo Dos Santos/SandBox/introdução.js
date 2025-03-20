@@ -132,4 +132,37 @@ async function executarBusca() {
   log(resultado);
 }
 
-executarBusca
+executarBusca();
+
+const meuMetodo = function exemploMetodo(){
+  log("Executei por metodo normal")
+}
+
+log(meuMetodo);
+
+const objTeste = {
+  oi(){
+    log("OI")
+  },
+  xau(){
+    log("XAU")
+  },
+};
+
+objTeste.oi;
+objTeste.xau;
+
+
+//Manipulação de DOM
+
+document.addEventListener("DOMContentLoaded", () => {
+  let titulo = document.createElement("h2");
+  titulo.innerText = "Ola DOM";
+  document.body.appendChild(titulo);
+});
+
+function toggleImagem(){
+  let img = document.getElementById("MinhaImagem")
+  img.style.display = img.style.display ==="none"?"block" : "none"
+
+}
