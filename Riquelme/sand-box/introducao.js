@@ -1,116 +1,156 @@
-// cometar use //
-
-var ola = "ola mundo! JS";
+var ola = "Olá Mundo! JS";
 console.log(ola);
 
-function log(valor){
-    console.log(valor);
+function log(valor) {
+    console.log(valor)
 }
 
-// Tipos de variáveis 
+// Tipos de Variáveis
 
-    var valor = 10;
-    log(typeof valor);
+var valor = 10;
+log(typeof valor); //number
 
-    var palavra 
-    log (typeof "palavra");
+var palavra = "Gabriel";
+log(typeof palavra); //string
 
-    var isOK = true;
-    log(typeof isOK);
+var isOK = true;
+log(typeof isOK); //boolean
 
-    var meuObj = {}; //obejto
-    var meuArray = {}; // array
-    var nulo = null; // null
-    var variavelFlamengo; // Underfined
+var meuObj = {}; //Object
+var meuArray = []; // Array
+var nulo = null; //Null
+var variavelPalmeiras; //Undefined
 
-    // escopo de variavel 
+function compararEscopo() {
+    if (true) {
+        var varDentro = "Var dentro do bloco";
+        let letDentro = "Let dentro do bloco";
+        const constDentro = "Const dentro do bloco";
 
-    function compararEscopo (){
-        if (true){
-            var varDentro = "var dentro do bloco";
-            var letDentro = "Let dentro do bloco";
-            const constDentro = "Const dentro do bloco";
+        log(varDentro); //Funciona
+        log(letDentro); //Funciona
+        log(constDentro); // Funciona
+    }
 
-            log(varDentro); //Funciona 
-            log(letDentro); //Funciona //
-            //log constDentro = "Const dentro do bloco"; //
-
-        
-            log(varDentro);//Funciona
-            log(letDentro);//Funciona
-            log(constDentro);// Funciona
-        }
-        log(palavra); // funciona (global)
-        log(varDentro); // funciona escopo
-       // log(letDentro); // erro acesso somente no bloco
-        //log(constDentro); //erro acesso somente no bloco
-        }
-        compararEscopo();
-        //operaçoes simples
-
-        const n1 = 1
-        const n2 = 5
-        const valorNumericoStr = "5"
-
-        log(n1 +n2);//6
-        log(n1 - n2);//4
-        log(n1 / n2);//0.2
-        log(n1 * n2);//5
+    //log(palavra); //Funciona (global)
+    //log(varDentro); //Funciona (Escopo)
+    //log(letDentro); // Erro (Local)
+    //log(constDentro); // Erro (Local)
 
 
-        log(n1 == n2); //FALSE
-        log(n2 == valorNumericoStr);//FALSE
-        log(n2 === valorNumericoStr);//FALSE
+}
+compararEscopo()
 
+//Operacoes simples
+const n1 = 1;
+const n2 = 5;
+const valorNumericoStr = "5";
 
-        log (((n2 > n1 ) || (n2 > n1 && (1 > 2)))); //falso 
+log(n1 + n2);
+log(n1 - n2);
+log(n1 / n2);
+log(n1 * n2);
+log(n1 == n2)
+log(n1 == valorNumericoStr);
+log(n1 === valorNumericoStr);
 
-        // manipulacao de arrays
+log((n2 > n1) || (n2 > n1) && (1 > 2)); //false
 
-        let frutas = ["maça","Banana", "Laranja"];
-        log(frutas.length);//3
-        log(frutas[1]);//Banana
+//Manipulação de arrays
+let frutas = ["Maca", "Banana", "Laranja"]
+log(frutas.lenght);
+log(frutas[1])
 
-        // adicionando novo item 
-        frutas.push("manga");
-        log(frutas);
+frutas.push("Manga");
 
-        //Remover o ultimo elemento
+log(frutas);
 
-        frutas.pop();
-        
-        log(frutas);
-        //estruturas condicionais
+frutas.pop()
 
-        const idade = 18;
-        if(idade >=18){
-            log("sou adulto")
-        }else if (idade >= 2){
-            log("sou crianca")
-        }else{
-            log("sou bebe")
-        }
+log(frutas)
 
-        const instituicao = "CEM10";
+const idade = 18;
+if (idade >= 18) {
+    log("Sou Adulto");
 
-        switch(instituicao){
-            case "CEM10" : log("ESCOLA");
-            break;
-            case "CIL" : log("eSCOLA DE LINGUAS")
-            break;
-            case "CEUB" : log("FACULDADE")
-            break;
-            default :
-            log("nao e instituicao");
-        }
+} else if (idade >= 2) {
+    log("Sou criança");
+} else {
+    log("Sou bebe");
+}
 
-        // estrutura de repeticao 
+const instituicao = "CEM10";
 
-        for(let loop = 0; loop < 5; loop++){
-            log(`Meu valor no loop: $(lopp)`));
-        }
-            let valorWhile = 0 ;
-            while (valorWhile <5){
-            log:(`Meu valor no loop": $(valorWhite)`)
-            valorWhile
-            }
+switch (instituicao) {
+    case "CEM10": log("Escola");
+    break;
+    case "CIL": log("Escola de linguas");
+    break;
+    case "CEUB": log("Faculdade");
+    break;
+    default:
+        log("Não é uma instituição");
+}
+
+// Estrutura de repetição
+
+for(let loop = 0; loop < 5; loop++){
+    log(`Meu valor no loop: ${loop}`)
+
+}
+let valorWhile = 0;
+while(valorWhile < 5){
+    log(`Meu valor no loop: ${valorWhile}`);
+    valorWhile++;
+}
+
+//Funções Assíncronas permitem executar operações 
+//sem bloquear a execução do código
+
+async function buscarDados(){
+    return new Promise(resolve => {
+        setTimeout(() => resolve("Dados Recebidos"), 4*1000);
+    });
+}
+
+async function executarBusca() {
+    log("Buscando...")
+
+    let resultado = await buscarDados();
+
+    log(resultado);
+    
+}
+
+executarBusca();
+
+const meuMetodo = function exemploMetodo(){
+    log("Exececutei por metodo normal");
+};
+log(meuMetodo);
+
+const objTeste = {
+    oi (){
+        log ("OI");
+    },
+    xau (){
+        log("XAU");
+    }
+};
+
+objTeste.oi();
+objTeste.xau();
+
+//Manipulação do DOM
+//Aqui criamos um elemento dinamicamente e o adicionamos ao corpo da página
+document.addEventListener("DOMContentLoaded", () => {
+    let titulo = document.createElement("h2");
+    titulo.innerText = "Olá Melhor do mundo";
+    document.body.appendChild(titulo);
+  });
+  
+
+  function ToggleRaca(){
+    let img =document.getElementById("imagemraca");
+    img.style.display = img.style.display == "none" ? "block" : "none";
+  }
