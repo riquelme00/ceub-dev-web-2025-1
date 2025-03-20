@@ -111,3 +111,49 @@ while (valorWhile < 5) {
   log(`Meu valor no loop: ${valorWhile}`);
   valorWhile++;
 }
+
+
+ async function buscarDados() {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve("Dados Recebidos"), 4 * 1000);
+  });
+}
+
+async function executarBusca() {
+  log("Buscando...");
+
+  let resultado = await buscarDados();
+
+  log(resultado);
+}
+
+executarBusca();
+
+const meuMetodo = function exemploMetodo() {
+  log("Execeutei por metodo normal");
+};
+
+log(meuMetodo);
+
+const objTeste = {
+  oi() {
+    log("OI");
+  },
+  xau() {
+    log("XAU");
+  },
+};
+
+objTeste.oi();
+objTeste.xau();
+
+document.addEventListener("DOMContentLoaded", () => {
+  let titulo = document.createElement("h2");
+  titulo.innerText = "Olá DOM";
+  document.body.appendChild(titulo);
+});
+
+function toggleImagem() {
+  let img = document.getElementById("minhaImagem");
+  img.style.display = img.style.display === "none" ? "block" : "none";
+}
