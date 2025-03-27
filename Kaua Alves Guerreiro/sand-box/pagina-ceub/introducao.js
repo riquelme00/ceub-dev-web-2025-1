@@ -174,3 +174,19 @@ function mostrarValorRadio(){
     }
   }
 }
+
+function mostrarValorCehckbox(){
+  let checkboxs = document.getElementsByName("interesse");
+  let selecionados = [];
+  for(let checkboxs of checkboxs){
+    if(checkboxs.checked){
+      selecionados.push(checkboxs.value);
+    }
+  }
+
+  alert(
+    "Selecionados: " + 
+    (selecionados.length > 0 ? selecionados.join(", ") : "Nenhum")
+);
+
+}
