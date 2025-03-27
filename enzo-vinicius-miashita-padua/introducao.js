@@ -34,9 +34,6 @@ objTeste.xau();
 document.addEventListener("DOMContentLoaded", () => {
     const titulo = document.createElement("h2");
     titulo.innerText = 'Olá DOM';
-    titulo.addEventListener("click", () => {
-        document.body.style.background = 'red';
-    });
     document.body.appendChild(titulo);
 });
 
@@ -54,4 +51,46 @@ img.addEventListener("mouseover", () => {
 
 img.addEventListener("mouseout", () => {
     img.src = 'https://uploads.metroimg.com/wp-content/uploads/2025/02/14182411/gato-com-cara-desconfiada.jpg';
+});
+
+
+const exibir = document.querySelector("#exibir");
+exibir.addEventListener("click", () => {
+    const valor = document.querySelector("#meuCombo").value;
+    const h3 = document.createElement("h3");
+    h3.innerHTML = valor;
+
+    fetch('/teste', {
+        method : 'POST',
+        headers : {
+            'Content-Type' : 'application/json'
+        },
+        body : JSON.stringify({
+            valor : valor
+        })
+    }).then(response => {
+        return response.json();
+    }).then(data => {
+        console.log(data);
+    });
+
+    document.body.appendChild(h3);
+    setTimeout(() => {
+        document.body.removeChild(h3);
+    }, 1500); 
+});
+
+
+const checkboxs = document.querySelectorAll(".checkbox");
+const exibir2 = document.querySelector("#exibir2");
+
+exibir2.addEventListener("click", () => {
+    let valores = [];
+    checkboxs.forEach((element) => {
+        if (element.checked) {
+            valores.push(element.value);
+        }
+    });
+
+    alert(`Selecionados: ${valores.length > 0 ? valores.join(", ") : 'Nenhum'}`);
 });
