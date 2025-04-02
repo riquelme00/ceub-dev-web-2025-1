@@ -1,12 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <script src="introducao.js"></script>
 </head>
 
 <body>
-    <h1 style="display: flex; justify-content: center;">HOME</h1>
+    <h1>HOME</h1>
+    <hr>
+
+    <img id="minhaImagem"
+        src="https://blog.karvi.com.br/wp-content/uploads/2023/11/foto-ferrari-purosangue-prova-su-strada-immagini.jpg"
+        width="400px" height="200px">
+
+    <button onclick="toggleImagem()">Mostrar/Ocultar</button>
+
+    <hr>
+
+    <select id="meuCombo">
+        <option value="opcao1">Opção 1</option>
+        <option value="opcao2">Opção 2</option>
+        <option value="opcao3">Opção 3</option>
+    </select>
+    <button onclick="mostrarValorCombo()">Exibir valor da Combo</button>
+
+    <hr>
+
+    <input type="radio" name="tamanho" value="pequeno" id="tamanhoPequeno">  
+    <label for="tamanhoPequeno">Pequeno</label>
+
+    <input type="radio" name="tamanho" value="medio" id="tamanhoMedio">
+    <label for="tamanhoMedio">Médio</label>
+
+    <input type="radio" name="tamanho" value="grande" id="tamanhoGrande">
+    <label for="tamanhoGrande">Grande</label>
+
+    <button ondblclick="mostrarValorRadio()">Mostrar Radio Selecionado</button>
+
+    <hr>
+
+    <h3>Interesse:</h3>
+    <input type="checkbox" name="Interesse" value="musica" id="musicaId">
+    <label for="musicaId">Música</label>
+
+    <input type="checkbox" name="Interesse" value="">
+    <input type="checkbox" name="Interesse" value="">
 </body>
 
 </html>
