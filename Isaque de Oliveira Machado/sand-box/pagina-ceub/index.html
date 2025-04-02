@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script src="introducao.js"></script>
+    </head>
+    <body>
+        <h1 style="text-align: center;">HOME</h1>
+        <hr>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <img id="minhaimagem" src="https://i.pinimg.com/736x/94/ae/fc/94aefc0b4cc029fb9ae73faa95c906d2.jpg"
+                style="align-items: center;"
+                width="1200"
+                height="600">
+        </div>
+        <button onclick="toggleImagem()" style="text-align: center;">Mostrar/Ocultar</button>
+
+        <hr>
+
+        <select id="meuCombo" onblur="mostrarValorCombo()">
+            <option value="opcao1">Opção 1</option>
+            <option value="opcao2">Opção 2</option>
+            <option value="opcao3">Opção 3</option>
+        </select>
+        <button onclick="mostrarValorCombo()">Exibir valor da Combo</button>
+        
+        <hr>
+
+        <input type="radio" name="tamanho" value="pequeno">Pequeno
+        <input type="radio" name="tamanho" value="medio">Médio
+        <input type="radio" name="tamanho" value="grande">Grande
+
+        <button ondblclick="mostrarValorRadio()">Mostrar Radio selecionado</button>
+
+        <hr>
+
+        <h3>Interesse:</h3>
+        <input type="checkbox" name="interesse" value="ESPORTE">Esporte
+        <input type="checkbox" name="interesse" value="MUSICA">Música
+        <input type="checkbox" name="interesse" value="VIDEO-GAME">Vídeo-Game
+        <br>
+        <button onclick="mostrarValorCheckbox()">Mostrar checkbox selecionados</button>
+
+    </body>
+
+</html>
