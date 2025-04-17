@@ -17,6 +17,21 @@ export default {
   components: {
     HomeComponent,
     UsuarioComponent
+  },
+  created() {
+    console.log("created");
+  },
+  mounted() {
+    console.log("mounted");
+  },
+  updated(){
+    console.log("updated");
+  },
+  errorCaptured() {
+    console.log("errorCaptured");
+  },
+  unmounted(){
+    console.log("unmounted");
   }
 }
 </script>
