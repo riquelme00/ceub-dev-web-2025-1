@@ -5,12 +5,40 @@
     <body>
         <h1>HOME</h1>
         <hr>
-        <img id="imagemraca"src="https://static.wixstatic.com/media/3fb1a8_e968ede81f2741e489dce5a8835b9980~mv2.png/v1/fill/w_480,h_538,al_c,q_85,usm_1.20_1.00_0.01,enc_avif,quality_auto/3fb1a8_e968ede81f2741e489dce5a8835b9980~mv2.png">
-            <width="200">
-            <height="100">
+        
+        <img id="minhaImagem" src="https://docente.ceub.br/Images/logoceub-nome.png"
+            width="200"
+            height="100">
+
+        <button onclick="toggleImagem()">Mostrar/Ocultar</button>
+
+        <hr>
+
+        <select id="meuCombo"  onblur="mostrarValorCombo()">
+            <option value="oi1">Opção 1</option>
+            <option value="oi2">Opção 2</option>
+            <option value="oi3">Opção 3</option>
+        </select>
+        <button onclick="mostrarValorCombo()">Exibir valor da Combo</button>
+
+        <hr>
+
+        <input type="radio" name="tamanho" value="pequeno">Pequeno
+        <input type="radio" name="tamanho" value="medio">Médio
+        <input type="radio" name="tamanho" value="grande">Grande
+
+        <button ondblclick="mostrarValorRadio()">Mostrar Radio selecionado</button>
+
+        <hr>
+
+        <h3>Interesse:</h3>
+        <input type="checkbox" name="interesse" value="MUSICA">Música
+        <input type="checkbox" name="interesse" value="ESPORTE">Esporte
+        <input type="checkbox" name="interesse" value="VIDEO-GAME">Vídeo-Game
+        <br>
+        <button onclick="mostrarValorCheckbox()">Mostrar Checkbox selecionados</button>
 
 
-            <button onclick="ToggleRaca()">Mostrar /Ocultar</button>
 
     </body>
 </html>
