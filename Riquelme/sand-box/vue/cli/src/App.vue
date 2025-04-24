@@ -7,18 +7,25 @@
     <home-component/>
     <br>
     <usuario-component/>
+    <br>
+    <imagem-component/>
+    <br>
+    <estilo-component/>
   </div>
 </template>
 
 <script>
 import HomeComponent from './components/HomeComponent.vue'
+import ImagemComponent from './components/ImagemComponent.vue';
 import UsuarioComponent from './components/UsuarioComponent.vue';
-
+import EstiloComponent from './components/EstiloComponent.vue';
 export default {
   name: 'App',
   components: {
     HomeComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    ImagemComponent,
+    EstiloComponent
   }
   , 
   created() {
