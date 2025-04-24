@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script src="introducao.js"></script>
+    </head>
+    <body>
+        <h1>HOME</h1>
+        <hr>
+        <img id="minhaImagem" src="https://sgi.uniceub.br/Templates/Clean/Images/logoCEUBcroped.png"
+            width="200"
+            height="100">
+
+        <button onclick="toggleImagem()">Mostrar/Ocultar</button>
+         
+        <hr>
+
+        <select id="meuCombo">
+            <option value="oi1">Opcao 1</option>
+            <option value="oi2">Opcao 2</option>
+            <option value="oi3">Opcao 3</option>
+        </select>
+       <button onclick="mostrarValorCombo()">Exibir valor da Combo</button>
+       
+       <hr>
+
+       <input type="radio" name="tamanho" value="pequeno">Pequeno
+       <input type="radio" name="tamanho" value="Medio">Medio
+       <input type="radio" name="tamanho" value="Grande">Grande
+
+       <button ondblclick="mostrarValorRadio()">Mostrar Radio selecionado</button>
+
+       <hr>
+      
+       <h3>Interesse:</h3>
+       <input type="checkbox" name="interesse" value="MUSICA">Música
+       <input type="checkbox" name="interesse" value="ESPORTE">Música
+       <input type="checkbox" name="interesse" value="VIDEO-GAME">Música
+       <br>
+       <button ondblclick="mostrarValorRadio()">Mostrar Radio selecionado</button>
+
+    </body>
+</html>

@@ -3,7 +3,7 @@ var ola = "Olá Mundo JS";
 console.log(ola);
 
 function log(valor) {
-    console.log(valor);
+  console.log(valor);
 }
 
 //Tipos de variáveis
@@ -26,20 +26,20 @@ log(nulo)
 var variavelFlamengo; // Undefined
 
 function compareEscopo() {
-    if (true) {
-        var varDentro = "Var dentro do bloco";
-        let letDentro = "Let dentro do bloco";
-        const constDentro = "Const dentro do bloco";
+  if (true) {
+    var varDentro = "Var dentro do bloco";
+    let letDentro = "Let dentro do bloco";
+    const constDentro = "Const dentro do bloco";
 
-        log(varDentro); //Funciona
-        log(letDentro); //Funciona
-        log(constDentro); //Funciona
-    }
-    log(palavra); //Funciona! (Global)
-    log(varDentro); //Funciona! (Escopo)
-    log(letDentro); //Erro! (Acesso somente no bloco)   
-    log(constDentro); //Erro! (Acesso somente no bloco)
-    
+    log(varDentro); //Funciona
+    log(letDentro); //Funciona
+    log(constDentro); //Funciona
+  }
+  log(palavra); //Funciona! (Global)
+  log(varDentro); //Funciona! (Escopo)
+  log(letDentro); //Erro! (Acesso somente no bloco)   
+  log(constDentro); //Erro! (Acesso somente no bloco)
+
 }
 
 compareEscopo();
@@ -68,7 +68,7 @@ log(frutas.length) //3
 log(frutas[1]) // banana
 
 //adicionando novo item
-frutas.push("Manga") 
+frutas.push("Manga")
 log(frutas);
 
 //Remover o último elemento
@@ -110,4 +110,79 @@ let valorWhile = 0;
 while (valorWhile < 5) {
   log(`Meu valor no loop: ${valorWhile}`);
   valorWhile++;
+}
+
+
+async function buscarDados() {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve("Dados Recebidos"), 4 * 1000);
+  });
+}
+
+async function executarBusca() {
+  log("Buscando...");
+
+  let resultado = await buscarDados();
+
+  log(resultado);
+}
+
+executarBusca();
+
+const meuMetodo = function exemploMetodo() {
+  log("Execeutei por metodo normal");
+};
+
+log(meuMetodo);
+
+const objTeste = {
+  oi() {
+    log("OI");
+  },
+  xau() {
+    log("XAU");
+  },
+};
+
+objTeste.oi();
+objTeste.xau();
+
+document.addEventListener("DOMContentLoaded", () => {
+  let titulo = document.createElement("h2");
+  titulo.innerText = "Olá DOM";
+  document.body.appendChild(titulo);
+});
+
+function toggleImagem() {
+  let img = document.getElementById("minhaImagem");
+  img.style.display = img.style.display === "none" ? "block" : "none";
+}
+
+function mostrarValorCombo() {
+  let combo = document.getElementById("meuCombo");
+  alert("Valor selecionado: " + combo.value);
+}
+
+
+function mostrarValorRadio() {
+  let combo = document.getElementByname("tamanho");
+
+  for (let radio of radios) {
+    if (radio.cheked) {
+      alert("Opção selecionado: " + radio.value);
+      break;
+    }
+  }
+
+}
+
+function mostrarValorRadio() {
+  let radios = document.getElementsByName("tamanho");
+
+  for (let radio of radios) {
+    if (radio.checked) {
+      alert("Opção selecionada: " + radio.value);
+      break;
+    }
+  }
 }
