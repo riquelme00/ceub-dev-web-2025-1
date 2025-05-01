@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>Titulo Padrão</h1>
-        <p class="subtitulo">Subtitulo estiloso</p>
+        <p class="subtitulo">Copyright</p>
 
     </div>
 </template>
