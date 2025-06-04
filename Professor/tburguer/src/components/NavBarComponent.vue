@@ -1,7 +1,9 @@
 <template>
     <div>
         <nav id="nav">
-            <router-link to="/">Home</router-link>
+            <router-link to="/">
+                <img src="/img/logo_tburguer.png" id="logo"/>
+            </router-link>
             <router-link to="/menu">Menu</router-link>
             <router-link to="/pedidos">Pedidos</router-link>
         </nav>
@@ -15,6 +17,38 @@
 </script>
 
 <style scoped>
+
+    #logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    #nav #logo{
+        margin: auto;
+        margin-left: 0;
+    }
+
+    #nav {
+        background-color: #333;
+        border-bottom: 3px solid darkgoldenrod;
+        padding: 15px 50px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #nav a {
+        color: darkgoldenrod;
+        text-decoration: none;
+        margin: 12px;
+        transition: .5s;
+    }
+    #nav a:hover {
+        color: antiquewhite;
+        font-size: 20px;
+    }
+
+  
 
 
 
