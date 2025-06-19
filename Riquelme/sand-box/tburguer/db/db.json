@@ -76,6 +76,82 @@
         "eh_novidade": true
       },
       "id": 2
+    },
+    {
+      "nome": "ff",
+      "ponto": {
+        "id": 1,
+        "descricao": "Ao ponto"
+      },
+      "bebidas": [],
+      "complemento": [],
+      "statusId": 5,
+      "hamburguer": {
+        "id": 2,
+        "nome": "Veggie",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696429812651d76f4d8671_75_75.jpeg",
+        "descricao": "Delicioso pão de brioche selado na brasa com manteiga de leite, maionese secreta, tomate assado e defumado na lenha frutífera, blend de arroz negro, batata baroa e Shimeji 150 gramas grelhado e regado ao azeite , queijo derretido na brasa e molho secreto de cebola caramelizada, tudo preparado com aquele sabor de churrasco.",
+        "valor": 35,
+        "eh_novidade": true
+      },
+      "id": 3
+    },
+    {
+      "nome": "ff",
+      "ponto": {
+        "id": 1,
+        "descricao": "Ao ponto"
+      },
+      "bebidas": [],
+      "complemento": [],
+      "statusId": 5,
+      "hamburguer": {
+        "id": 2,
+        "nome": "Veggie",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696429812651d76f4d8671_75_75.jpeg",
+        "descricao": "Delicioso pão de brioche selado na brasa com manteiga de leite, maionese secreta, tomate assado e defumado na lenha frutífera, blend de arroz negro, batata baroa e Shimeji 150 gramas grelhado e regado ao azeite , queijo derretido na brasa e molho secreto de cebola caramelizada, tudo preparado com aquele sabor de churrasco.",
+        "valor": 35,
+        "eh_novidade": true
+      },
+      "id": 4
+    },
+    {
+      "nome": "ff",
+      "ponto": {
+        "id": 1,
+        "descricao": "Ao ponto"
+      },
+      "bebidas": [],
+      "complemento": [],
+      "statusId": 5,
+      "hamburguer": {
+        "id": 2,
+        "nome": "Veggie",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696429812651d76f4d8671_75_75.jpeg",
+        "descricao": "Delicioso pão de brioche selado na brasa com manteiga de leite, maionese secreta, tomate assado e defumado na lenha frutífera, blend de arroz negro, batata baroa e Shimeji 150 gramas grelhado e regado ao azeite , queijo derretido na brasa e molho secreto de cebola caramelizada, tudo preparado com aquele sabor de churrasco.",
+        "valor": 35,
+        "eh_novidade": true
+      },
+      "id": 5
+    },
+    {
+      "nome": "ff",
+      "ponto": {
+        "id": 1,
+        "descricao": "Ao ponto"
+      },
+      "bebidas": [],
+      "complemento": [],
+      "statusId": 5,
+      "hamburguer": {
+        "id": 2,
+        "nome": "Veggie",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696429812651d76f4d8671_75_75.jpeg",
+        "descricao": "Delicioso pão de brioche selado na brasa com manteiga de leite, maionese secreta, tomate assado e defumado na lenha frutífera, blend de arroz negro, batata baroa e Shimeji 150 gramas grelhado e regado ao azeite , queijo derretido na brasa e molho secreto de cebola caramelizada, tudo preparado com aquele sabor de churrasco.",
+        "valor": 35,
+        "eh_novidade": true
+      },
+      "id": 6
     }
   ],
   "opcionais": {

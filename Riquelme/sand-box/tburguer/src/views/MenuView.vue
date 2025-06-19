@@ -12,7 +12,7 @@
                             <p id="nome-content">{{ burguer.nome }}</p>
                             <p id="preco-content">R$ {{ burguer.valor }},00</p>
                             <p id="descricao-content">{{ burguer.descricao }}</p>
-                            <button>selecionar</button>
+                            <button @click="selecionarBurguer(burguer)">selecionar</button>
                         </div>
                     </div>
                 </div>
@@ -128,10 +128,10 @@
         cursor: pointer;
      }
      
-     .card-coluna:hover {
+     .card-coluna button:hover {
         background-color: transparent;
-        color: darkblue;
-        border: solid 1px rgb(171, 194, 125);
+        color: orangered;
+        border: solid 1px darkgray;
         border-radius: 5px;
         font-size:14px;
         

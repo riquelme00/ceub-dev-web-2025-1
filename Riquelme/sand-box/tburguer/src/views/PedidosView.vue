@@ -9,6 +9,8 @@
     export default{
         name:"PedidosView"
     }
-
 </script>
+
+<style scoped> 
+</style>
 
