@@ -10,7 +10,7 @@
                             <p id="nome-content">{{ burguer.nome }}</p>
                             <p id="preco-content">R$ {{ burguer.valor}},00</p>
                             <p id="descricao-content">{{ burguer.descricao }}</p>
-                            <button>Selecionar</button>
+                            <button @click="selecionarBurguer(burguer)">Selecionar</button>
                         </div> 
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                 const param = JSON.stringify(burguerSelecionado);
                 const burguerJson = encodeURIComponent(param);
                 //Pegar o router e dar um push na nova tela.
-                this.$router.push({path: '/config-pedido', query: {burguer : burguerSelecionado}});
+                this.$router.push({path: '/config-pedido', query: {burguer : burguerJson}});
             }
         },
         mounted() {
