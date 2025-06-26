@@ -1,6 +1,6 @@
 <template>
     <div id="main-banner">
-        <h1>Hamburguer de churrasqueiro</h1>
+        <h1>Pizzaria Paradiso</h1>
     </div>
 </template>
 
@@ -13,7 +13,7 @@
 <style scoped>
 
     #main-banner{
-        background-image: url("/public/banner.jpeg");
+        background-image: url("/public/img/imgpizza.png");
         background-position: 0;
         background-size: cover;
         height: 500px;

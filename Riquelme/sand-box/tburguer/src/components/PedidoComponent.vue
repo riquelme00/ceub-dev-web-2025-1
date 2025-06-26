@@ -68,8 +68,8 @@
             return {
                 nomeCliente : "",
                 pontoCarneSelecionado: "",
-                listaComplementosSelecionados: "",
-                listaBebidasSelecionadas: "",
+                listaComplementosSelecionados: [],
+                listaBebidasSelecionadas: [],
                 listaPontoCarne : [],
                 listaComplementos : [],
                 listaBebidas : []
@@ -126,7 +126,7 @@
     z-index: -1;
     justify-content: center;
     width: 100%;
-    height: 100px;
+    height: 180px;
     object-fit: cover;
 }
 
