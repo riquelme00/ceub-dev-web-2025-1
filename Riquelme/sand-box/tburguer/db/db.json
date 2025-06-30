@@ -1,0 +1,175 @@
+{
+  "tipos_pontos": [
+    {
+      "id": 1,
+      "descricao": "Ao ponto"
+    },
+    {
+      "id": 2,
+      "descricao": "Bem passada"
+    },
+    {
+      "id": 3,
+      "descricao": "Mal passada"
+    }
+  ],
+  "status_pedido": [
+    {
+      "id": 1,
+      "descricao": "Pedido em espera"
+    },
+    {
+      "id": 2,
+      "descricao": "Em produção"
+    },
+    {
+      "id": 3,
+      "descricao": "A caminho"
+    },
+    {
+      "id": 4,
+      "descricao": "Entregue"
+    },
+    {
+      "id": 5,
+      "descricao": "Pedido pendente"
+    },
+    {
+      "id": 6,
+      "descricao": "Pedido realizado"
+    }
+  ],
+  "pedidos": [],
+  "opcionais": {
+    "complemento": [
+      {
+        "id": 1,
+        "nome": "Combo Bebida + Batata",
+        "descricao": "Batata ondulada sequinha e crocante temperada com lemon pepper + bebida de sua escolha",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431534651d7daeba24e_75_75.jpeg",
+        "valor": 11,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "Batata ondulada sequinha e crocante temperada com lemon pepper",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431513651d7d99094b6_75_75.jpeg",
+        "valor": 7,
+        "eh_novidade": false
+      }
+    ],
+    "bebidas": [
+      {
+        "id": 1,
+        "nome": "Coca Cola Lata 310 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431408651d7d30645b9_75_75.jpeg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 2,
+        "nome": "Shweppes Citrus 310 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/16966989566521924cc9418_75_75.jpeg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 3,
+        "nome": "Coca Cola Zero Lata 310 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431455651d7d5fd3661_75_75.jpeg",
+        "valor": 6,
+        "eh_novidade": false
+      },
+      {
+        "id": 4,
+        "nome": "Del Valle Uva Lata 290 ml",
+        "descricao": "",
+        "foto": "https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/1696431434651d7d4a1e285_75_75.jpeg",
+        "valor": 7,
+        "eh_novidade": false
+      }
+    ]
+  },
+  "menu": {
+    "limitado": [
+      {
+        "id": 1,
+        "nome": "Calabresa",
+        "foto": "https://cache.dominos.com/wam/prod/market/BR/_pt/images/promo/33a7aa32-ba4e-41f6-acab-0fb189e2b325.jpg",
+        "descricao": "Queijo, calabresa e cebola, oregano.",
+        "valor": 38,
+        "eh_novidade": true
+      }
+    ],
+    "burgues": [
+      {
+        "id": 1,
+        "nome": "Pizza de Queijo",
+        "foto": "https://cache.dominos.com/olo/6.159.3/assets/build/market/BR/_pt/images/img/products/larges/S_PIZMUS.jpg",
+        "descricao": "Queijo e orégano..",
+        "valor": 35,
+        "eh_novidade": true
+      },
+      {
+        "id": 2,
+        "nome": "Pizza Margherita",
+        "foto": "https://cache.dominos.com/olo/6.159.3/assets/build/market/BR/_pt/images/img/products/larges/S_PIZMG.jpg",
+        "descricao": "Queijo, tomate, oregano e manjericão.",
+        "valor": 35,
+        "eh_novidade": true
+      },
+      {
+        "id": 3,
+        "nome": "Pizza Frango com Requeijão Especial",
+        "foto": "https://cache.dominos.com/olo/6.159.3/assets/build/market/BR/_pt/images/img/products/larges/S_PIZFR.jpg",
+        "descricao": "Frango desfiado, cebola, oregano e requeijão",
+        "valor": 32,
+        "eh_novidade": true
+      },
+      {
+        "id": 4,
+        "nome": "Pizza de Pepperoni",
+        "foto": "https://cache.dominos.com/olo/6.159.3/assets/build/market/BR/_pt/images/img/products/larges/S_PIZPEP.jpg",
+        "descricao": "Queijo, oregano e pepperoni.",
+        "valor": 30,
+        "eh_novidade": true
+      },
+      {
+        "id": 5,
+        "nome": "Pizza de 4 Queijos",
+        "foto": "https://cache.dominos.com/olo/6.159.3/assets/build/market/BR/_pt/images/img/products/larges/S_PIZFQ.jpg",
+        "descricao": "Queijo, requeijão, gorgonzola, oregano e parmesão ralado.",
+        "valor": 30,
+        "eh_novidade": true
+      },
+      {
+        "id": 6,
+        "nome": "Pizza Pão de Alho",
+        "foto": "https://cache.dominos.com/olo/6.159.3/assets/build/market/BR/_pt/images/img/products/larges/S_PIZALHO.jpg",
+        "descricao": "Queijo, pão ciabatta, pasta de alho, parmesão ralado e orégano.",
+        "valor": 20,
+        "eh_novidade": true
+      },
+      {
+        "id": 7,
+        "nome": "Napolitana",
+        "foto": "https://cache.dominos.com/olo/6.159.3/assets/build/market/BR/_pt/images/img/products/larges/S_PIZNAP.jpg",
+        "descricao": "Queijo, tomate, oregano e parmesão ralado.",
+        "valor": 15,
+        "eh_novidade": true
+      },
+      {
+        "id": 8,
+        "nome": "Carne Seca com Cream Cheese",
+        "foto": "https://cache.dominos.com/wam/prod/market/BR/_pt/images/promo/2da084bb-6669-4742-9a7e-32abdcbc307c.jpg",
+        "descricao": "Queijo, cebola, carne seca desfiada, cream cheese e orégano.",
+        "valor": 50,
+        "eh_novidade": true
+      }
+    ]
+  }
+}
