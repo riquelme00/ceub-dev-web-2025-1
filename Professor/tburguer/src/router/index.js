@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import MenuView from "@/views/MenuView.vue";
 import PedidosView from "@/views/PedidosView.vue";
+import ConfiguracaoPedidoView from "@/views/ConfiguracaoPedidoView.vue";
 
 const routes = [
   {
@@ -17,6 +18,11 @@ const routes = [
     path: "/pedidos",
     name: "pedidos",
     component: PedidosView,
+  },
+  {
+    path: "/config-pedido",
+    name: "config-pedido",
+    component: ConfiguracaoPedidoView,
   },
 ];
 
